@@ -34,11 +34,11 @@ int main(int argc, char **argv)
     const string imagenColor = argv[1];
     const string imagenGrises = argv[2];
 
+    // Mostrar mensaje indica que se está cargando la imagen
+    cout << "\nCargando imagen...\n" << endl;
+
     // Cargar la imagen a color desde imagenColor
     Mat image = imread(imagenColor, IMREAD_COLOR);
-
-    // Mostrar mensaje de loading
-    cout << "Loading image..." << endl;
 
     // Verificar si la carga de la imagen fue exitosa
     if (image.empty())
@@ -47,11 +47,15 @@ int main(int argc, char **argv)
         return -1; // Salir con un código de error
     }
 
-    // Mostrar información sobre la imagen
-    cout << "Filas (alto): " << image.rows << " Columnas (ancho): " << image.cols << endl;
+    // Mostrar mensaje indica que se está cargando la imagen
+    cout << "Imagen Cargada: " << imagenColor << " Dimensiones\n   Alto: " << image.rows << "   Ancho: " << image.cols << endl;
+
 
     // Iniciar el temporizador
     auto start = chrono::high_resolution_clock::now();
+
+    // Mostrar mensaje indica que se está convirtiendo la imagen
+    cout << "\nConvirtiendo imagen a escala de grises..." << endl;
 
     // Convierte a escala de grises
     Mat grayscaleImage = convertToGrayscale(image);
@@ -60,13 +64,16 @@ int main(int argc, char **argv)
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> duration = end - start;
 
-    cout << "Conversion to grayscale completed." << endl;
-    cout << "Total time spent in seconds is " << duration.count() << endl;
+    cout << "\nConversion secuencial a escala de grises completada." << endl;
+    cout << "El tiempo de conversion fue " << duration.count() << " segundos" << endl;
+
 
     // Guarda la nueva imagen en escala de grises con el nombre imagenGrises
     imwrite(imagenGrises, grayscaleImage);
 
-    cout << "Conversión a escala de grises completada." << endl;
+    // Mostrar mensaje de que la imagen fue guardada
+    cout << "\nImagen guardada como " << imagenGrises << endl;
+    cout << "\nTerminado.\n" << endl;
 
     return 0;
 }
