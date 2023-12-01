@@ -8,4 +8,4 @@ Diferencia de tiempo en conversion (imagen 21600x38400, ryzen 3500u 4 cores 8 th
 
 1) Secuencial 13-14 segundos aprox.
 2) Hebras 4 segundos aprox.
-3) 
+3) OPenMP 13 segundos aprox.
