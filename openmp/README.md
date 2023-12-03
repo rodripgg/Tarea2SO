@@ -1,6 +1,6 @@
 Para ejecutar el conversor a escala de grises con hebras:
 
-1) En la terminal, ejecuta el comando make (o make openmp) estando dentro de la carpeta "thread".
+1) En la terminal, ejecuta el comando make (o make openmp) estando dentro de la carpeta "openmp".
 
 2) Como parámetro, ingresa la imagen a convertir, el nombre para el archivo de la imagen ya convertida y el número de hebras que quieres usar.
 

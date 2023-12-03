@@ -64,8 +64,8 @@ int main(int argc, char **argv)
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> duration = end - start;
 
-    cout << "\nConversion secuencial a escala de grises completada." << endl;
-    cout << "El tiempo de conversion fue " << duration.count() << " segundos" << endl;
+    cout << "\nConversión secuencial a escala de grises completada." << endl;
+    cout << "El tiempo de conversión fue " << duration.count() << " segundos" << endl;
 
 
     // Guarda la nueva imagen en escala de grises con el nombre imagenGrises

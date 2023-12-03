@@ -2,6 +2,8 @@ Tarea 2: Procesamiento paralelo de imágenes utilizando hebras.
 
 Alumnos: Rodrigo Parra - Andrés Aguila
 
+Para ejecutar las disntintas versiones se debe estar dentro de la carpeta y seguir las instrucciones del README.
+
 Diferencia de tiempo en conversión (imagen 21600x38400, Ryzen 3500u 4 cores 8 threads 2.1Ghz-3.7Ghz):
 
 Secuencial: 13-14 segundos aprox.
