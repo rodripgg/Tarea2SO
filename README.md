@@ -1,4 +1,3 @@
-#Tarea 2 SO
 Tarea 2: Procesamiento paralelo de imágenes utilizando hebras.
 
 Alumnos: Rodrigo Parra - Andrés Aguila
